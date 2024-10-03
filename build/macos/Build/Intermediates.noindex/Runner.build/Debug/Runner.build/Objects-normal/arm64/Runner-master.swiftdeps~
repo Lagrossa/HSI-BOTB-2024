@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "5fb78bde16e201baa3b4ef56497bb684b5b3186a270654c10e43c13d597e4790"
+build_start_time: [1727931076, 88881969]
+build_end_time: [1727931076, 180768013]
+inputs:
+  "/Users/yannislagrosa/GitHub/HSI-BOTB-2024/flutter_application_1/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1727931058, 628316402]
+  "/Users/yannislagrosa/GitHub/HSI-BOTB-2024/flutter_application_1/macos/Runner/AppDelegate.swift": !private [1726161493, 0]
+  "/Users/yannislagrosa/GitHub/HSI-BOTB-2024/flutter_application_1/macos/Runner/MainFlutterWindow.swift": !private [1726161493, 0]
