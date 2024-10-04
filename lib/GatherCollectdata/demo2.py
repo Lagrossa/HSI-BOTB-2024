@@ -2,6 +2,15 @@ import pandas as pd
 from datetime import datetime
 from flask import Flask, request, jsonify
 
+import http.server
+import socketserver
+PORT=8000
+Handler=http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    print("Serving at port", PORT)
+    httpd.serve_forever()
+
 app = Flask(__name__)
 
 # Function to determine usability based on fabric type
@@ -10,7 +19,7 @@ def is_usable(fabric_type):
     return fabric_type in usable_fabrics
 
 # Load existing Excel sheet
-excel_file_path = 'C:/Users/a463f/HSIDATA/fabric_data.xlsx'  
+excel_file_path = 'C:/Users/a463f/OneDrive/Documents/HSI-BOTB-2024lib/GatherCollectdata/fabric_data.csv'
 df = pd.read_excel(excel_file_path)
 
 @app.route('/add_fabric', methods=['POST'])

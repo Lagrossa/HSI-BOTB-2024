@@ -8,7 +8,7 @@ def is_usable(fabric_type):
     return fabric_type in usable_fabrics
 
 # Load existing Excel sheet
-excel_file_path = 'C:/Users/a463f/HSIDATA/fabric_data.xlsx'  
+excel_file_path = 'C:/Users/a463f/OneDrive/Documents/HSI-BOTB-2024lib/GatherCollectdata/fabric_data.csv'
 df = pd.read_excel(excel_file_path)
 
 # Collect user input  -> change this to gather data from flutter code
